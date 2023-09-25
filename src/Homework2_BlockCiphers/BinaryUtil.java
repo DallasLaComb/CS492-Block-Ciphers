@@ -1,4 +1,4 @@
-package Homework2;
+package Homework2_BlockCiphers;
 
 public class BinaryUtil {
     public static String byteToBinaryString(byte passedByte) {

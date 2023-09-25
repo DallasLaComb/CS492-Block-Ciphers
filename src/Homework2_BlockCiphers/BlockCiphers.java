@@ -1,4 +1,4 @@
-package Homework2;
+package Homework2_BlockCiphers;
 
 public class BlockCiphers {
 //    The subsititution method is a Switch case statement that can take input of all 4bit combos, and maps it to a new unique 4 bit combo.
