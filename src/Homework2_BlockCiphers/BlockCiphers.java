@@ -1,5 +1,6 @@
 package Homework2_BlockCiphers;
 
+
 public class BlockCiphers {
 //    The subsititution method is a Switch case statement that can take input of all 4bit combos, and maps it to a new unique 4 bit combo.
 //    I made mine very simple in order to test that the code is working properly... Each input just maps to it's +1, and
@@ -46,7 +47,10 @@ public class BlockCiphers {
 //  substitute method. Each itteration it stores this substituted / cipher text in a temp array which is returned in the end.
 //  I only created a temp array that it returns, as I didn't want to change my actual message array, as I'll be using the same
 //  plain text messages in the other encryption methods too.
+
+
     public static byte[] ecbEncrypt(byte [] message){
+        BinaryUtil shift = new BinaryUtil();
         byte [] temp = new byte[message.length];
         for (int i =0;i<message.length;i++){
             temp[i] = substitute(message[i]);
@@ -89,8 +93,8 @@ public class BlockCiphers {
 //Initializing Object for Homework2.BinaryUtil Class - Recommended class to format bytes by professor Chad Williams
         BinaryUtil decimalToBinary = new BinaryUtil();
 //These will be the same 16 / 32 Bit Plain Text Inputs for all encryption testing.
-        byte[] plainText16Bit= {15,15};
-        byte[] plainText32Bit = {15,15,15,15};
+        byte[] plainText16Bit= {(byte)255,(byte)255};
+        byte[] plainText32Bit = {(byte)200,(byte)200,(byte)200,(byte)200};
 //My IV for ctrEncrypt
         byte iv = 14;
 //Giving a variable byte array to hold my ECB Encryptions.

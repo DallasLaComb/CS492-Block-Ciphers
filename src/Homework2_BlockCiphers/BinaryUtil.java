@@ -18,7 +18,7 @@ public class BinaryUtil {
     }
 
     public static void main(String args[]) {
-        byte[] plaintext = {(byte) 0x2F, (byte) 0xE3, (byte) 0x84};
+        byte[] plaintext = {(byte) 200, (byte) 200, (byte)200};
         System.out.println(bytesToBlocksString(plaintext));
     }
 }
